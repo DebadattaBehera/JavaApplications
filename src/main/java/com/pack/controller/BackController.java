@@ -21,7 +21,7 @@ public class BackController {
 	@RequestMapping(value="/process",method=RequestMethod.POST)
 	public ModelAndView m2(@ModelAttribute("user") User user){
 	 dao.register(user);
-     ModelAndView mav1=new ModelAndView("success");
+     ModelAndView mav1=new ModelAndView("success1");
      mav1.addObject("name",user.getUsername());
 	 return mav1;
 	}
